@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+            </Toolbar>
+
+            <EditText
+                android:id="@+id/toolbarSearch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="Search Products..."
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/showFav"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <ImageButton
+                android:id="@+id/showFav"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:contentDescription="Favorites"
+                app:layout_constraintEnd_toStartOf="@+id/showCart"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <ImageButton
+                android:id="@+id/showCart"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:contentDescription="Cart"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:id="@+id/mainContentScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/mainContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="28sp"
+                android:text="Almighty Shopping"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvTagTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Discover your style"
+                android:layout_marginTop="4dp"/>
+
+
+            <View
+                android:id="@+id/productCarousel"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/light_blue"/>
+
+            <TextView
+                android:id="@+id/tvTrendingProducts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Categories"
+                android:layout_marginTop="10dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvCategories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"/>
+
+            <!--    <androidx.recyclerview.widget.RecyclerView-->
+            <!--        android:id="@+id/rvProducts"-->
+            <!--        android:layout_width="match_parent"-->
+            <!--        android:layout_height="wrap_content"-->
+            <!--        android:layout_marginTop="12dp"/>-->
+
+            <View
+                android:id="@+id/productCarousel2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/yellow"/>
+
+            <View
+                android:id="@+id/productCarousel3"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/chocolate"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>
