@@ -1,8 +1,8 @@
-🛒 E-Commerce Android App
+🛒 **E-Commerce Android App**
 
 A modern e-commerce Android application built with Java, developed as a portfolio project to demonstrate Android development, clean architecture, API integration, local data persistence, and real-world application development.
 
-📱 Features
+📱 **Features**
   1. 🏠 Home screen
   2. 🛍️ Product listing
   3. 🔎 Product details
@@ -15,7 +15,7 @@ A modern e-commerce Android application built with Java, developed as a portfoli
 
 🚧 This project is actively under development.
 
-🛠️ Tech Stack
+🛠️ **Tech Stack**
   1. Java
   2. Android SDK
   3. XML
@@ -25,14 +25,15 @@ A modern e-commerce Android application built with Java, developed as a portfoli
   7. Navigation Component
   8. Material Design
 
- 🏗️ Architecture
+ 🏗️ **Architecture**
 The application follows a layered architecture with separation between UI, business logic, and data.
 
   UI -> ViewModel -> Repository -> Remote Data Source -> REST API -> Backend / Database
-  The Android application communicates with the backend through REST APIs rather than maintaining a local database as the primary data source.
+
+The Android application communicates with the backend through REST APIs rather than maintaining a local database as the primary data source.
 
 🚀 Current Progress
-Android Foundation
+**Android Foundation**
 
   1. Project setup☑️
   2. Home screen☑️
@@ -42,7 +43,7 @@ Android Foundation
   6. Cart
   7. Wishlist
      
-Online E-Commerce
+**Online E-Commerce**
 
   1. Backend API
   2. User authentication
@@ -52,12 +53,12 @@ Online E-Commerce
   6. Payment integration
 
 
-🎯 Purpose
+🎯 **Purpose**
 
 This project is being developed as a portfolio application to demonstrate practical Android development skills and experience building a complete online e-commerce application.
 
 The long-term goal is to combine Android development, backend services, and AI to create an intelligent and user-friendly shopping experience.
 
-👨‍💻 Developer
+👨‍💻 **Developer**
 
 Built with Java and Android by [Surya Prakash Vattikooti].
