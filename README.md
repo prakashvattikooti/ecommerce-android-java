@@ -26,13 +26,15 @@ A modern e-commerce Android application built with Java, developed as a portfoli
   8. Material Design
 
  🏗️ **Architecture**
-The application follows a layered architecture with separation between UI, business logic, and data.
+ 
+ The application follows a layered architecture with separation between UI, business logic, and data.
 
   UI -> ViewModel -> Repository -> Remote Data Source -> REST API -> Backend / Database
 
 The Android application communicates with the backend through REST APIs rather than maintaining a local database as the primary data source.
 
 🚀 Current Progress
+
 **Android Foundation**
 
   1. Project setup☑️
