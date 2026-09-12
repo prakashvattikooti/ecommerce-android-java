@@ -11,13 +11,13 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class MainViewModel extends ViewModel {
+public class HomePageViewModel extends ViewModel {
 
     private MutableLiveData<List<Categories>> categories;
 
     private MutableLiveData<List<Product>> products;
 
-    public MainViewModel() {
+    public HomePageViewModel() {
 
         categories = new MutableLiveData<>();
         products = new MutableLiveData<>();
